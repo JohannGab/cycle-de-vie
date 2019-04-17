@@ -47,10 +47,11 @@ class Form extends Component {
        </div>
       );
     }
-    componentDidUpdate(prevProps) {
-      console.log('Titre Changé');
+    componentDidUpdate(prevProps, prevState) {
+      if (prevState.globalTitle !== this.state.globalTitle) {
+        console.log('Titre changé')
+      }
     }
-  }
-  
+  }  
 
 export default Form;
