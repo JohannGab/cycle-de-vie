@@ -21,7 +21,7 @@ class Form extends Component {
       };
 
     render() {
-      console.log(this.state.title)
+      // console.log(this.state.title)
       return (
         <div className="FormCycle">
         <h1>{this.state.globalTitle}</h1>
@@ -47,7 +47,11 @@ class Form extends Component {
        </div>
       );
     }
+    componentDidUpdate(prevProps) {
+      console.log('Titre Changé');
+    }
   }
+  
 
   // onClick={this.CycleMessage()}
 
