@@ -53,6 +53,4 @@ class Form extends Component {
   }
   
 
-  // onClick={this.CycleMessage()}
-
 export default Form;
